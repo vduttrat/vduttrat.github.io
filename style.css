@@ -1,0 +1,99 @@
+body {
+	margin: 0px;
+	background-color: #000000;
+	color: #ffffff;
+	background-image: url(https://i.postimg.cc/ncSm2G46/Haruhi.png);
+	background-size: cover;
+	font-family: 'serif';
+}
+
+nav {
+	margin-bottom:6em;
+	background-color: #284bcd;
+
+}
+
+#gap {
+	padding-right: 8em;
+	padding-bottom: 0;
+}
+nav p {
+	padding-top: 1em;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+	font-family: 'serif';
+}
+
+nav p a{
+	color: antiquewhite;
+	text-decoration: none;
+}
+
+nav p a:hover {
+	color: #a0a9cd;
+}
+.intro {
+	padding-left:5em;
+}
+
+#greet {
+	font-family: 'serif';
+	font-size:1.5rem;
+
+}
+
+h2 {
+	font-family: 'Jost';
+	font-size:2rem;
+}
+
+#table {
+	padding-left:7em;
+}
+
+#me {
+	font-size:6rem;
+	font-family: 'serif';
+	animation: blinker 1s linear infinite;
+	margin-bottom: 2rem;
+}
+
+#uni {
+	font-size: 1rem;
+}
+@keyframes blinker{
+	50% {
+		opacity: 0;
+	}
+}
+p {
+	font-size: 20px;
+}
+img {
+	width: 400px;
+	height: 400px;
+	border-radius: 200px;
+	float: right;
+	margin: 30px;
+}
+
+#hobby {
+	margin: 20px;
+	font-size: 1.25rem;
+}
+
+#links  button {
+	background: #651FFF;
+	padding: 1.25em 2.5em;
+	color: antiquewhite;
+	font-size: 1.3rem;
+	margin-right: 1em;
+	border: solid black;
+	border-radius: 1.5rem;
+}
+
+button:hover {
+	transform: scale(1.1);
+	transition: ease-in-out ;
+}
