@@ -1,16 +1,28 @@
+html {
+	scroll-behavior: smooth;
+	scrollbar-width: none;
+}
 body {
 	margin: 0px;
-	background-color: #000000;
+	background-color: #040714;
 	color: #ffffff;
-	background-image: url(https://i.postimg.cc/ncSm2G46/Haruhi.png);
 	background-size: cover;
 	font-family: 'serif';
 }
 
-nav {
-	margin-bottom:6em;
-	background-color: #284bcd;
+#pfp {
+	width: 33em;
+	height: 33em;
+	border-radius: 17em;
+	float:right;
+	margin-right: 10em;
+}
 
+nav {
+	margin-bottom: 12.5em;
+	margin-top: -1.2em;
+	background-color: #0f1c4d;
+	padding-bottom: 0.005rem;
 }
 
 #gap {
@@ -18,11 +30,23 @@ nav {
 	padding-bottom: 0;
 }
 nav p {
-	padding-top: 1em;
+	font-weight: 1000;
+	padding-top: 0.5em;
 	text-align: center;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	font-weight: bold;
 	font-family: 'serif';
+}
+
+nav button {
+	font-size: 1.2rem;
+	background-color: #0f1c4d;
+	font-weight: 600;
+	color: antiquewhite;
+	border: none;
+	padding: 0.5em 1em;
+	border-radius: 1.2rem;
+
 }
 
 nav p a{
@@ -30,9 +54,10 @@ nav p a{
 	text-decoration: none;
 }
 
-nav p a:hover {
-	color: #a0a9cd;
+nav p button:hover {
+	background-color: #a0a9cd;
 }
+
 .intro {
 	padding-left:5em;
 }
@@ -53,14 +78,23 @@ h2 {
 }
 
 #me {
+	color: antiquewhite;
+	font-weight: 700;
 	font-size:6rem;
 	font-family: 'serif';
 	animation: blinker 1s linear infinite;
 	margin-bottom: 2rem;
+	padding: 0;
+	border: none;
+	background-color:#040714 ;
 }
 
 #uni {
-	font-size: 1rem;
+	font-size: 1.2rem;
+}
+
+#uni a {
+	color: white;
 }
 @keyframes blinker{
 	50% {
@@ -84,7 +118,8 @@ img {
 }
 
 #links  button {
-	background: #651FFF;
+	font-weight: 500;
+	background-color: #2443b6;
 	padding: 1.25em 2.5em;
 	color: antiquewhite;
 	font-size: 1.3rem;
@@ -94,6 +129,23 @@ img {
 }
 
 button:hover {
+	background-color: #284bcd;
 	transform: scale(1.1);
-	transition: ease-in-out ;
+	transition: all 0.2s ease-in-out ;
+}
+#part1 {
+	background-color: black;
+	background-image: url(https://i.postimg.cc/W3BLTb2k/Haruhi-darkblue.png);
+	background-size: cover;
+}
+#part2 {
+	padding-left: 5em;
+	background-color: #070d24;
+	padding-bottom: -1.5em;
+	margin-bottom: -1.6em;
+}
+#footer {
+	padding-left: 5em;
+	margin-top:-0.2em;
+	background-color: #0f1c4d;
 }
