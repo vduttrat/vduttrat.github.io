@@ -22,7 +22,7 @@ nav {
 	margin-bottom: 12.5em;
 	margin-top: -1.2em;
 	background-color: #0f1c4d;
-
+	padding-bottom: 0.005rem;
 }
 
 #gap {
@@ -30,7 +30,7 @@ nav {
 	padding-bottom: 0;
 }
 nav p {
-	font-weight: 500;
+	font-weight: 1000;
 	padding-top: 0.5em;
 	text-align: center;
 	font-size: 1.2rem;
@@ -38,13 +38,24 @@ nav p {
 	font-family: 'serif';
 }
 
+nav button {
+	font-size: 1.2rem;
+	background-color: #0f1c4d;
+	font-weight: 600;
+	color: antiquewhite;
+	border: none;
+	padding: 0.5em 1em;
+	border-radius: 1.2rem;
+
+}
+
 nav p a{
 	color: antiquewhite;
 	text-decoration: none;
 }
 
-nav p a:hover {
-	color: #a0a9cd;
+nav p button:hover {
+	background-color: #a0a9cd;
 }
 
 .intro {
@@ -67,14 +78,23 @@ h2 {
 }
 
 #me {
+	color: antiquewhite;
+	font-weight: 700;
 	font-size:6rem;
 	font-family: 'serif';
 	animation: blinker 1s linear infinite;
 	margin-bottom: 2rem;
+	padding: 0;
+	border: none;
+	background-color:#040714 ;
 }
 
 #uni {
-	font-size: 1rem;
+	font-size: 1.2rem;
+}
+
+#uni a {
+	color: white;
 }
 @keyframes blinker{
 	50% {
