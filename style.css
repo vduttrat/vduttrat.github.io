@@ -3,7 +3,6 @@ html {
 	scrollbar-width: none;
 }
 body {
-	margin: 0px;
 	background-color: #040714;
 	color: #ffffff;
 	background-size: cover;
@@ -19,20 +18,28 @@ body {
 }
 
 nav {
+    width: 95vw;
+    border: solid black;
+	text-align: center;
+    padding-top: 0.5em;
+    position: sticky;
+    top:2em;
+    backdrop-filter: blur(10px);
+    z-index: 99;
 	margin-bottom: 12.5em;
-	margin-top: -1.2em;
-	background-color: #0f1c4d;
-	padding-bottom: 0.005rem;
+	background-color: rgba(15,28,77,0.6);
+	padding-bottom: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #gap {
 	padding-right: 8em;
 	padding-bottom: 0;
 }
-nav p {
+nav #bar {
 	font-weight: 1000;
 	padding-top: 0.5em;
-	text-align: center;
 	font-size: 1.2rem;
 	font-weight: bold;
 	font-family: 'serif';
@@ -40,21 +47,22 @@ nav p {
 
 nav button {
 	font-size: 1.2rem;
-	background-color: #0f1c4d;
+	background-color: rgba(15,28,77,0);
 	font-weight: 600;
 	color: antiquewhite;
 	border: none;
 	padding: 0.5em 1em;
 	border-radius: 1.2rem;
+	transition: all 0.2s ease-in-out ;
 
 }
 
-nav p a{
+nav #bar a{
 	color: antiquewhite;
 	text-decoration: none;
 }
 
-nav p button:hover {
+nav #bar button:hover {
 	background-color: #a0a9cd;
 }
 
@@ -82,24 +90,17 @@ h2 {
 	font-weight: 700;
 	font-size:6rem;
 	font-family: 'serif';
-	animation: blinker 1s linear infinite;
 	margin-bottom: 2rem;
 	padding: 0;
 	border: none;
-	background-color:#040714 ;
+	background-color:rgba(0,0,0,0) ;
+	transition: all 0.2s ease-in-out ;
 }
-
 #uni {
 	font-size: 1.2rem;
 }
-
-#uni a {
-	color: white;
-}
-@keyframes blinker{
-	50% {
-		opacity: 0;
-	}
+#uni a{
+    color: white;
 }
 p {
 	font-size: 20px;
@@ -126,12 +127,12 @@ img {
 	margin-right: 1em;
 	border: solid black;
 	border-radius: 1.5rem;
+	transition: all 0.2s ease-in-out ;
 }
 
 button:hover {
 	background-color: #284bcd;
 	transform: scale(1.1);
-	transition: all 0.2s ease-in-out ;
 }
 #part1 {
 	background-color: black;
@@ -139,6 +140,7 @@ button:hover {
 	background-size: cover;
 }
 #part2 {
+    padding-top: 0.2em;
 	padding-left: 5em;
 	background-color: #070d24;
 	padding-bottom: -1.5em;
