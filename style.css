@@ -5,7 +5,9 @@
     font-style: normal;
     font-display: swap;
 }
-
+a{
+    all: unset;
+}
 html{
     scrollbar-width: none;
     scroll-behavior: smooth;
@@ -16,10 +18,26 @@ html{
 body{
     padding:0;
     margin: 0;
-    background: linear-gradient(to bottom, #404081, #000020 /*1c1c3f*/);
+    background: linear-gradient(to bottom, #404081, #000020);
+    overflow-x: hidden;
 }
-
-#navlist a{
+.hero{
+    width:200vw;
+    height:100vh;
+    position: relative;
+    top: 0;
+    margin-top:-7vh;
+    display: flex;
+    flex-direction:row;
+}
+.page2{
+    border: solid 4px #000;
+    position: relative;
+    z-index:1;
+    background: linear-gradient(to bottom, #404081, #191945);
+    transition: 1s;
+}
+#navlist li{
     all: unset;
     cursor: pointer;
     border: solid 2px transparent;
@@ -27,7 +45,7 @@ body{
     padding: 0.75rem 1.25rem;
     transition: 0.5s;
 }
-#navlist a:hover{
+#navlist li:hover{
     border: solid 2px white;
 }
 header{
@@ -45,7 +63,7 @@ header{
     border: solid 5px black;
     color: whitesmoke;
     backdrop-filter: blur(3px);
-    z-index: 1;
+    z-index: 5;
 }
 #navlist{
     display: flex;
@@ -59,13 +77,13 @@ header{
 
 .intro{
     height:100vh;
-    width:100%;
+    width:100vw;
     position: relative;
     background-image: url('./bg1.png');
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
 }
 .introContent{
     position: absolute;
@@ -219,11 +237,10 @@ header{
 }
 
 .about{
-    height: 65vh;
+    height: 62vh;
     width:100vw;
     position: relative;
     border-bottom: solid 4px #92aed0;
-    border-top: solid 4px #92aed0;
 }
 .aboutContent{
     position: absolute;
@@ -247,7 +264,7 @@ header{
     font-style: italic;
 }
 .hobby{
-    height: 35vh;
+    height: 32vh;
     width:100vw;
     position: relative;
 }
@@ -266,7 +283,7 @@ header{
 }
 
 .stats{
-    height: 42vh;
+    height: 52vh;
     width:100vw;
     display: flex;
     flex-direction: row;
@@ -274,13 +291,14 @@ header{
     align-items: center;
     padding: 0;
     position: relative;
+    border-top: solid 4px #92aed0;
 }
 .livestatus{
     position: absolute;
     color: white;
     font-style: italic;
-    top: 12px;
-    font-size: 1.3rem;
+    top: 3vh;
+    font-size: 2rem;
 }
 .statCard{
     height: 32vh;
@@ -361,4 +379,32 @@ content li{
 }
 .links button a{
     all: unset;
+}
+.first{
+    transform: translate(0);
+}
+.second{
+    transform: translate(-100vw);
+}
+
+.switch1{
+    all: unset;
+    position: absolute;
+    bottom: 5vh;
+    right: 5vw;
+}
+.switch2{
+    all:unset;
+    position: absolute;
+    bottom: 5vh;
+    left: 5vw;
+}
+.switch1,.switch2{
+    font-size: 4rem;
+    background: none;
+    border: solid 2px white;
+    border-radius: 2rem;
+    padding: 0.75rem;
+    color: white;
+    cursor: pointer;
 }
