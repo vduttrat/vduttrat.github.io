@@ -85,15 +85,17 @@ subReq.onreadystatechange = function(){
 
 const button1 = document.querySelectorAll('.gotoAbout')
 const hero = document.querySelector('.page2')
-const button2 = document.querySelector('.gotoIntro')
+const button2 = document.querySelectorAll('.gotoIntro')
 
 const arr = Array.from(button1);
+const arr2 = Array.from(button2);
 arr.forEach((val)=>{
     val.addEventListener('click', ()=>{
         hero.className = "page2 second"
     })
 })
-
-button2.addEventListener('click',()=>{
-    hero.className = "page2 first"
+arr2.forEach((val)=>{
+    val.addEventListener('click',()=>{
+        hero.className = "page2 first"
+    })
 })
