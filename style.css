@@ -10,6 +10,7 @@ html{
     scrollbar-width: none;
     scroll-behavior: smooth;
     font-family: '0xProto Nerd Font Mono', monospace;
+    font-size: 1.5vh;
 }
 
 body{
@@ -265,8 +266,7 @@ header{
 }
 
 .stats{
-    /*background-color: #000020;*/
-    height: 40vh;
+    height: 42vh;
     width:100vw;
     display: flex;
     flex-direction: row;
@@ -283,7 +283,7 @@ header{
     font-size: 1.3rem;
 }
 .statCard{
-    height: 30vh;
+    height: 32vh;
     width:32vw;
     display: flex;
     flex-direction: column;
@@ -293,6 +293,9 @@ header{
     position: relative;
     border: solid 2px #92aed0;
     box-shadow: 5px 5px 5px 0px #92aed0;
+    overflow: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 heading{
     font-size: 1.8rem;
@@ -358,5 +361,4 @@ content li{
 }
 .links button a{
     all: unset;
-
 }

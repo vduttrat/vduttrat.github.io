@@ -1,6 +1,6 @@
-//const forcesID = 'https://codeforces.com/api/user.info?handles=vduttrat'
-//const submissions = 'https://codeforces.com/api/user.status?handle=vduttrat&from=1&count=3'
-//const git = 'https://api.github.com/users/vduttrat'
+const forcesID = 'https://codeforces.com/api/user.info?handles=vduttrat'
+const submissions = 'https://codeforces.com/api/user.status?handle=vduttrat&from=1&count=3'
+const git = 'https://api.github.com/users/vduttrat'
 
 const d1 = document.querySelector("#github")
 const d2 = document.querySelector("#forces")
