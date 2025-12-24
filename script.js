@@ -24,7 +24,7 @@ forcesReq.onreadystatechange = function(){
                 <li><span class="stathead">Handle</span>: ${data.handle}</li>
                 <li><span class="stathead">Organization</span>: ${data.organization}</li>
                 <li><span class="stathead">Rating</span>: ${data.rating}</li>
-                <li><span class="stathead">Friend Count</span>: ${data.friendOfCount}</li>
+                <li>Friend of <span class="stathead">${data.friendOfCount}</span> users</li>
             </ul>
         </content>
 </div>
